@@ -1,0 +1,24 @@
+{
+    "configurations": [
+
+        {
+            "name": "Wii U Homebrew (devkitPPC/wut)",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:DEVKITPRO}/wut/include",
+                "${env:DEVKITPRO}/devkitPPC/include",
+                "${env:DEVKITPRO}/portlibs/ppc/include"
+            ],
+            "defines": [
+                "GEKKO",
+                "HW_WIIU",
+                "__WIIU__"
+            ],
+            "compilerPath": "${env:DEVKITPRO}/devkitPPC/bin/powerpc-eabi-gcc.exe", // Or .exe for Windows
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-arm" // Or "windows-gcc-arm" for Windows host
+        }
+    ],
+    "version": 4
+}
